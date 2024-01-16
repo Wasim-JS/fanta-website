@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+/* html{
+    scroll-snap-type:  y mandatory;
+  
+}
+section{
+    scroll-snap-align: center;
+} */
+html,body{
+    background:linear-gradient(300deg,orange 80%,rgb(129, 129, 12) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    gap: 40px;
+
+}
+header .logo img{
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 64px);
+
+}
+
+main .sec1{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+
+#fanta{
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+
+#main-text{
+    font-size:43vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    z-index: 2;
+}
+
+#oslice{
+    position: absolute;
+    width: 33vh;
+    left: 30%;
+    z-index: 1;
+}
+
+#leaf{
+    position: absolute;
+    width: 30vh;
+    top: 10%;
+    left: 5%;
+}
+#leaf2{
+    position: absolute;
+    width: 20vh;
+    top: 10%;
+    right: 5%;
+    transform: rotate(90deg)
+}
+
+.sec2{
+    width: 100%;
+    height: 100vh;
+    background:radial-gradient(farthest-side at 20% 53%,green, orange);;
+    display: flex;
+}
+
+.sec2 .sec2-left{
+    flex:1;
+    height: 100%;
+    /* background-color: red; */
+}
+.sec2 .sec2-right{
+    flex:1;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+
+}
+.sec2 .sec2-right .text{
+   width: 80%;
+
+}
+.sec2 .sec2-right .text h2{
+   font-size: 32px;
+   margin: 20px 0px;
+
+}
+
+.sec3{
+   
+    width: 100%;
+    height: 100vh;
+    background:radial-gradient(farthest-side at 60% 55%,green, orange);;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec3 .title{
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    color: white;
+    font-size: 120px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sec3 .title p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
