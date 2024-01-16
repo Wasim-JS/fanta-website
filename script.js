@@ -61,7 +61,7 @@ let t2 = gsap.timeline({scrollTrigger:{
 }})
 
 t2.from('.sec3 .title p',{
-    y:"100%",
+    // y:"100%",
     opacity:0,
     stagger:2,
     delay:1,
